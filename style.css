@@ -159,14 +159,47 @@ section div img {
   width: 50px;
   height: 50px;
 }
+
+.icon {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
+  .menudiv nav ul {
+    position: absolute;
+    display: inline-block;
+
+    list-style: none;
+    align-items: center;
+    margin-top: 6%;
+    padding: 0%;
+    width: 90%;
+    justify-content: space-around;
+    height: auto;
+  }
+  .icon {
+    display: flex;
+  }
+  .topnav li {
+    display: none;
+  }
+  .topnav .icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive li {
+    height: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
   .menudiv {
     display: grid;
     grid-template-columns: 100%;
   }
-  li {
-    display: none;
-  }
+
   .firsttext {
     padding: 5%;
     position: relative;
